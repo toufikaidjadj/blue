@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Website</title>
+    <style>
+        body {
+            background-color: #3498db; /* Blue background color */
+            color: #fff; /* White text color */
+            font-family: Arial, sans-serif; /* Specify a common font family */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        header {
+            background-color: #2980b9; /* Blue header background color */
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #2980b9; /* Blue footer background color */
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Blue Website</h1>
+    </header>
+
+    <main>
+        <p>This is a simple website where everything is styled with the color blue.</p>
+        <p>Feel free to add your content here!</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Blue Website</p>
+    </footer>
+</body>
+</html>
