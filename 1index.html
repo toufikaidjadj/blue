@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changing Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 1s ease; /* Smooth transition for color changes */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Function to generate a random color in hexadecimal format
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Function to change the background color every second
+        function changeColor() {
+            document.body.style.backgroundColor = getRandomColor();
+            setTimeout(changeColor, 1000); // Call the function again after 1000 milliseconds (1 second)
+        }
+
+        // Start the color-changing process
+        changeColor();
+    </script>
+</body>
+</html>
